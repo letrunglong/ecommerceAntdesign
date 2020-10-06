@@ -1,0 +1,80 @@
+/***************RESPONSIVE-Typical Laptop******************* */
+@media screen and (max-width: 1366px){
+    .App{
+        font-size: 18px;
+    }
+    .nav .cart p,
+    /* .rate p */
+    .aspirin-button span
+    {
+        position: absolute;
+        visibility: hidden;
+    }
+    .nav .cart::after{
+        content: "Giỏ hàng";
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+    }
+    .aspirin-button::after {
+        content: "Thêm vào giỏ";
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+    }
+    .App .banner{
+        width: 100%;
+        height: 100%;
+    }
+    .App .banner>*{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* button price side left */
+
+    .price-sort .ant-btn.button-price{
+        margin: 0 !important;
+        height: auto !important;
+        transform: scale(0.9);
+        margin-right: 5px !important;
+    }
+    .price-sort .ant-image img{
+        margin-bottom: 9px !important;
+        transform: scale(1.08);
+        
+    }
+    /* doanh so */
+
+    .check.bot label.ant-checkbox-wrapper:first-child{
+        margin-left: 0;
+    }
+    .check.bot .ant-checkbox + span{
+        padding-right: 0;
+    }
+    .check.bot .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+        width: 100%;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    /* brands */
+    .nav_brand{
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .nav_brand .brand_list{
+        width: 100%;
+        height: 100%;
+    }
+    .ant-image.side._02{
+    position: relative;
+    bottom: 200px;
+    left: 270px;
+    }
+
+}

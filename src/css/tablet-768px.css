@@ -1,0 +1,149 @@
+@media only screen and (max-width: 768px){
+    .App{
+        font-size: 16px;
+    }
+    .nav .ant-btn{
+        height: 37px !important;
+    }
+    .nav input.ant-input{
+        font-size: 16px;
+    }
+    .nav .ant-input-group>.ant-input:first-child{
+        padding-left: 10px;
+    }
+    .nav .search-box{
+        margin-left: 10px;
+    }
+    .nav .cart p,
+    .one-bar .rate p,
+    .aspirin-button span,
+    .nav .log p
+    {
+        position: absolute;
+        visibility: hidden;
+        
+    }
+    .nav .cart{
+        margin-right: 0;
+    }
+    .nav .log .imgLogin,
+    .nav .cart {
+        margin-left: 15px;
+        padding: 0;
+        transform: scale(0.87);
+    }
+    .nav .cart::after{
+        content: "";
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+        
+    }
+    .container .content-primary .primary .one-product.top:nth-child(4){
+        margin-top: 25px;
+    }
+    .container .content-primary .primary .one-product{
+        width: 30%;
+    }
+    .container .content-primary .primary .one-product .aspirin-button{
+        margin-top: 10px;
+    }
+    .aspirin-button{
+        padding: 5px 5px;
+
+    }
+    .aspirin-button::after {
+        content: "Thêm vào giỏ";
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+    }
+    .App .banner{
+        width: 100%;
+        height: 100%;
+    }
+    .App .banner>*{
+        width: 100%;
+        height: 100%;
+    }
+    span{
+        font-size: 16px;
+    }
+    /* letf side bar */
+
+    .container .side-bar .one-bar:first-child,
+    .container .content-primary .primary .one-product.top{
+        margin-top: -60px;
+    }
+    .side-bar .one-bar .rate img{
+        margin-right: 0;
+    }
+    .container .check {
+        max-height: 300px;
+        overflow-y: auto;
+        margin-top: 30px;
+    }
+    .container .side-bar .one-bar{
+        margin-top: 25px;
+    }
+    .price-sort{
+        text-align: center;
+    }
+    .price-sort .ant-btn.button-price{
+        transform: scale(1);
+        margin-bottom: 10px !important;
+    }
+    /* brand css */
+
+    /* .nav_brand{
+        overflow: visible;
+    } */
+    .ant-image.side._02{
+        bottom: 400px;
+        left: 0;
+    }
+    .ant-image.side._01 .ant-image-img,
+    .ant-image.side._02 .ant-image-img{
+        opacity: 0.9;
+    }
+
+    /* footer */
+
+    .parent .footer .footer_main .payonl{
+        transform: scale(0.8);
+        float: left;
+    }
+
+    .footer_main .image_social img:last-child{
+        position: relative;
+        top: -50px; left: 100px;
+    }
+    .footer_bot{
+        font-size: 12px;
+    }
+    .footer_bot div,.footer_bot div:first-child{
+        margin-right: 5px;
+    }
+    .footer_bot div,.footer_bot div:nth-child(2){
+       left: 10px;
+       font-size: 14px;
+       top: -20px;
+    }
+    .footer_bot div:nth-child(3),
+    .footer_bot div:nth-child(4),
+    .footer_bot div:nth-child(5){
+        width: 80%;
+        margin-right: 20px;
+    }
+    .footer_bot div:nth-child(3) img,
+    .footer_bot div:nth-child(4) img,
+    .footer_bot div:nth-child(5) img{
+        width: 100%;
+        height: 100%;
+        margin-right: 20px;
+        margin-top: 0;
+    }
+    .footer_bot div:nth-child(2) p:nth-child(4){
+        margin-top: 0;
+    }
+}

@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.css';
+import { Button, DatePicker, Layout, Image, Row, Col } from 'antd';
+import { ReactComponent as Banner } from './Images/banner.svg';
+import Sidebar from './Components/Content/Sidebar';
+import Content from './Components/Content/Content';
+import Footer from './Components/Footer';
+import NavBrand from './Components/NavBrand';
+import Header from './Components/Header';
+import '../src/css/tablet-1366px.css';
+import '../src/css/tablet-768px.css';
 
+
+
+// const { Header, Footer, Sider, Content } = Layout;
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <div className="banner">
+        <Banner className="imgBanner"/>
+      </div>
+      <div className="container">
+        <Sidebar />
+        <Content />
+      </div>
+      <NavBrand />
+      <Footer />
     </div>
   );
 }
